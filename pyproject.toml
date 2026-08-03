@@ -7,7 +7,13 @@ authors = [
     { name = "Serhat Gemici", email = "serhatgemici@msn.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "numpy==2.5.1",
+    "pandas==3.0.5",
+    "python-dateutil==2.9.0.post0",
+    "six==1.17.0",
+    "xlrd==2.0.2",
+]
 
 [project.scripts]
 project-data-exploration = "project_data_exploration:main"
