@@ -1,0 +1,17 @@
+[project]
+name = "project-data-exploration"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Serhat Gemici", email = "serhatgemici@msn.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+project-data-exploration = "project_data_exploration:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
