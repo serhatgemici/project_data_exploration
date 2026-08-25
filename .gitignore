@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 python_env/
 .ipynb_checkpoints
-Data/EU/Raw
+Data/raw/eu
