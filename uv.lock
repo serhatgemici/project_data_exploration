@@ -43,6 +43,40 @@ wheels = [
 ]
 
 [[package]]
+name = "bokeh"
+version = "3.10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+    { name = "narwhals" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "pillow" },
+    { name = "pyyaml" },
+    { name = "tornado", marker = "sys_platform != 'emscripten'" },
+    { name = "xyzservices" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4c/e8/93d270023eb987348f9b5a2aef0103f903511b934519cd2bbefde451868d/bokeh-3.10.0.tar.gz", hash = "sha256:73f0b0c06d7925ca2b6d52b2dc51c2533a11f667cc6944f1f06c039ccc57c5ce", size = 5982193, upload-time = "2026-08-18T17:47:09.943Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c5/0a/1423bb61b5f06376fe6ccf79c8781e2bb5e36c78c1814c78913b7425950f/bokeh-3.10.0-py3-none-any.whl", hash = "sha256:6bb8dbd4a555f71a921be5bd45c3bfaa15b390257fbadae76901927bd58629b7", size = 6649702, upload-time = "2026-08-18T17:47:07.287Z" },
+]
+
+[[package]]
+name = "category-encoders"
+version = "2.11.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e6/0c/fa0c4d157295dec7eba2adffbf459c008ed38a046d9dc23ca23d74dc4db9/category_encoders-2.11.0.tar.gz", hash = "sha256:e9b98701b0ab0e0c43c3f5dfe7fd3615fae176d83497ac04208ea6c285999fd1", size = 76337, upload-time = "2026-09-07T18:24:45.576Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/99/e4/4465de0c0bb23ca5c88cbbbfcc5bb13a2c209f11ed3fa3d38ad2b42d965f/category_encoders-2.11.0-py3-none-any.whl", hash = "sha256:7f4854f85d6e56163dd5dc18c2517edffb4408a4c4e4e84c00fb2fc8f26eb961", size = 107635, upload-time = "2026-09-07T18:24:44.27Z" },
+]
+
+[[package]]
 name = "cffi"
 version = "2.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1224,6 +1258,8 @@ name = "project-data-exploration"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "bokeh" },
+    { name = "category-encoders" },
     { name = "ipywidgets" },
     { name = "lazypredict" },
     { name = "matplotlib" },
@@ -1247,6 +1283,8 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "bokeh", specifier = ">=3.10.0" },
+    { name = "category-encoders", specifier = ">=2.11.0" },
     { name = "ipywidgets", specifier = ">=8.1.9" },
     { name = "lazypredict", specifier = ">=0.3.0" },
     { name = "matplotlib", specifier = ">=3.11.1" },
@@ -1256,7 +1294,7 @@ requires-dist = [
     { name = "scikit-learn", specifier = ">=1.9.0" },
     { name = "scipy", specifier = ">=1.18.1" },
     { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "setuptools", specifier = "<=80.10.2" },
+    { name = "setuptools", specifier = ">=80.10.2" },
     { name = "statsmodels", specifier = ">=0.15.0" },
     { name = "tpot", specifier = ">=1.1.0" },
     { name = "xgboost", specifier = ">=3.4.1" },
@@ -1904,6 +1942,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/07/5a/377161c2d3538d1990d7af382c79f3b2372e880b65de21b01b1a2b78691e/xlrd-2.0.2.tar.gz", hash = "sha256:08b5e25de58f21ce71dc7db3b3b8106c1fa776f3024c54e45b45b374e89234c9", size = 100167, upload-time = "2025-06-14T08:46:39.039Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1a/62/c8d562e7766786ba6587d09c5a8ba9f718ed3fa8af7f4553e8f91c36f302/xlrd-2.0.2-py2.py3-none-any.whl", hash = "sha256:ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9", size = 96555, upload-time = "2025-06-14T08:46:37.766Z" },
+]
+
+[[package]]
+name = "xyzservices"
+version = "2026.9.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c4/bd/b75d5c2312caec607ec995200fa1eb8453225fd869947ec743919c279544/xyzservices-2026.9.1.tar.gz", hash = "sha256:8d1a39bf6b192940cc5db5264eeefc1b20dd184f8b83b1303b078743744f5943", size = 1134047, upload-time = "2026-09-04T10:35:41.399Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a8/71/9219fe65ef32bddc0b5d14e1d98dfefe9d2c9c1b1d1e93efca1f29fcbd4d/xyzservices-2026.9.1-py3-none-any.whl", hash = "sha256:af4fddac0f1fa5f7951834e2c58e10109e722be548cb1fe4f1a8e8b18cef4c09", size = 98829, upload-time = "2026-09-04T10:35:40.08Z" },
 ]
 
 [[package]]
