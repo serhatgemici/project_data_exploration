@@ -9,10 +9,7 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
-    "bokeh>=3.10.0",
     "category-encoders>=2.11.0",
-    "ipywidgets>=8.1.9",
-    "lazypredict>=0.3.0",
     "matplotlib>=3.11.1",
     "numpy>=2.5.2",
     "openpyxl>=3.1.5",
@@ -21,15 +18,11 @@ dependencies = [
     "scikit-learn>=1.9.0",
     "scipy>=1.18.1",
     "seaborn>=0.13.2",
-    "setuptools>=80.10.2",
-    "statsmodels>=0.15.0",
-    "tpot>=1.1.0",
-    "xgboost>=3.4.1",
     "xlrd>=2.0.2",
 ]
 
-[project.scripts]
-project-data-exploration = "project_data_exploration:main"
+# [project.scripts]
+# jul26_bds_int_co2 = "jul26_bds_int_co2:main"
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
@@ -38,4 +31,5 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "ipykernel>=7.3.0",
+    "nbdime>=4.0.4",
 ]
