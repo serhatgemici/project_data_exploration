@@ -12,6 +12,8 @@ profiles = [
             "Building on a strong background in quality engineering, automation, and software delivery, I am moving into ML & AI Engineering while completing Liora's Machine Learning Engineer program with Université Paris-Sorbonne."
             "\n\n"
             "Developing hands-on expertise in Python-based data analysis, statistical modeling, machine learning, deep learning, and MLOps, including the engineering practices required to deploy and monitor ML solutions. "
+            "\n\n"
+            "Let's connect and collaborate on exciting ML & AI projects!"
         ),
     },
     {
